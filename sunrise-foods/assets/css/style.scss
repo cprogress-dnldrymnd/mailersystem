@@ -51,6 +51,8 @@ h1 {
 section.hero {
     min-height: 100vh;
     color: var(--bs-white);
+    opacity: 0;
+    transition: 500ms;
     .subheading {
         font-size: 38px;
         margin-bottom: 10vh;
@@ -84,5 +86,18 @@ section.hero {
     }
     @media (max-width: 767px) {
         text-align: center;
+    }
+    &.animate {
+        opacity: 1;
+    }
+}
+
+.fade-up {
+    transition: 300ms;
+    transform: translateY(20px);
+    opacity: 0;
+    &.animate {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

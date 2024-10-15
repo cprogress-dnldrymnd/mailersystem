@@ -30,14 +30,14 @@
             <img src="./assets/images/bg.jpg" alt="">
         </div>
         <div class="container position-relative">
-            <h1>New Website Coming Soon</h1>
-            <div class="subheading fw-light">Are you as <span class="fw-normal">excited</span> as we are?</div>
-            <div class="address mb-5">
+            <h1 class="heading fade-up">New Website Coming Soon</h1>
+            <div class="subheading fw-light fade-up">Are you as <span class="fw-normal">excited</span> as we are?</div>
+            <div class="address mb-5 fade-up">
                 <p>
                     <strong>Sunrise Foods</strong><br> 25a Heaton Road, Bradford, West Yorkshire, BD8 8RA
                 </p>
             </div>
-            <div class="cta fw-medium">
+            <div class="cta fw-medium fade-up">
                 <span>For orders or enquiries, please contact</span>
                 <span class="sep"> | </span>
                 <span><a href="tel:01274494263">01274 494 263</a></span>
@@ -46,7 +46,28 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function () {
+            setTimeout(function () {
+                jQuery('.hero').addClass('animate');
+            }, 500);
 
+            setTimeout(function () {
+                jQuery('.heading').addClass('animate');
+            }, 600);
+            setTimeout(function () {
+                jQuery('.subheading').addClass('animate');
+            }, 700);
+            setTimeout(function () {
+                jQuery('.address').addClass('animate');
+            }, 800);
+            setTimeout(function () {
+                jQuery('.cta').addClass('animate');
+            }, 900);
+        });
+    </script>
 </body>
 
 </html>
