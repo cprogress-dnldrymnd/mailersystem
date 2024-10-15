@@ -27,9 +27,12 @@
         <![endif]-->
     <section class="hero position-relative d-flex align-items-center">
         <div class="bg-image">
-            <img src="./assets/images/bg.jpg" alt="">
+            <img src="./assets/images/header.webp" alt="">
         </div>
         <div class="container position-relative">
+            <div class="logo mb-4 fade-up">
+                <h2>LOGO HERE</h2>
+            </div>
             <h1 class="heading fade-up">New Website Coming Soon</h1>
             <div class="subheading fw-light fade-up">Are you as <span class="fw-normal">excited</span> as we are?</div>
             <div class="address mb-5 fade-up">
@@ -55,17 +58,20 @@
             }, 500);
 
             setTimeout(function () {
-                jQuery('.heading').addClass('animate');
+                jQuery('.logo').addClass('animate');
             }, 600);
             setTimeout(function () {
-                jQuery('.subheading').addClass('animate');
+                jQuery('.heading').addClass('animate');
             }, 700);
             setTimeout(function () {
-                jQuery('.address').addClass('animate');
+                jQuery('.subheading').addClass('animate');
             }, 800);
             setTimeout(function () {
-                jQuery('.cta').addClass('animate');
+                jQuery('.address').addClass('animate');
             }, 900);
+            setTimeout(function () {
+                jQuery('.cta').addClass('animate');
+            }, 1000);
         });
     </script>
 </body>
