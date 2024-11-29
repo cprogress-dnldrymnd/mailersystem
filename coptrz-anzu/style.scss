@@ -144,21 +144,26 @@ h6 {
 }
 h1 {
     font-size: 108px;
-    line-height: 96px;
-    @media (max-width: 1199px) {
-        font-size: 90px;
+    @media (max-width: 1439px) {
+        font-size: 80px;
     }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
         font-size: 70px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         font-size: 60px;
     }
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
         font-size: 50px;
     }
-    @media (max-width: 360px) {
+    @media (max-width: 575px) {
         font-size: 40px;
+    }
+    @media (max-width: 360px) {
+        font-size: 30px;
+    }
+    @media (min-width: 1200px) {
+        line-height: 96px;
     }
 }
 
@@ -321,7 +326,6 @@ section.distributor {
         @media (min-width: 1800px) {
             max-width: 1720px;
         }
-        
     }
     .title {
         font-weight: 600;
@@ -335,8 +339,6 @@ section.distributor {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 1rem;
-           
-           
         }
 
         p {
