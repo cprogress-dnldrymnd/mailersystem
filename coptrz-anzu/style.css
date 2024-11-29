@@ -284,6 +284,12 @@ section.hero .heading-box {
 section.hero .inner {
   min-height: calc(100vh - 105px - 20px); }
 
+@media (min-width: 1700px) {
+  section.distributor .container {
+    max-width: 1620px; } }
+@media (min-width: 1800px) {
+  section.distributor .container {
+    max-width: 1720px; } }
 section.distributor .title {
   font-size: 32px;
   font-weight: 600; }

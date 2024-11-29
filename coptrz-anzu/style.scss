@@ -314,6 +314,15 @@ section.hero {
     }
 }
 section.distributor {
+    .container {
+        @media (min-width: 1700px) {
+            max-width: 1620px;
+        }
+        @media (min-width: 1800px) {
+            max-width: 1720px;
+        }
+        
+    }
     .title {
         font-size: 32px;
         font-weight: 600;
