@@ -288,18 +288,14 @@ section.distributor .title {
   font-size: 32px;
   font-weight: 600; }
 section.distributor .box h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 2rem; }
-  @media (max-width: 767px) {
-    section.distributor .box h3 {
-      font-size: 22px; } }
-  @media (max-width: 575px) {
-    section.distributor .box h3 {
-      font-size: 20px;
-      padding: 20px !important; } }
 section.distributor .box p {
   font-size: 18px; }
+@media (max-width: 575px) {
+  section.distributor .box {
+    padding: 20px !important; } }
 
 section.launch .box {
   gap: 50px; }
