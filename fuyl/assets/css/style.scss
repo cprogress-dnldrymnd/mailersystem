@@ -8,10 +8,10 @@ body {
 }
 h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 102px;
+    font-size: 80px;
     font-weight: bold;
     @media (max-width: 1199px) {
-        font-size: 80px;
+        font-size: 70px;
     }
     @media (max-width: 991px) {
         font-size: 60px;
@@ -48,17 +48,17 @@ h1 {
 }
 
 section.hero {
-    min-height: 100vh;
     opacity: 0;
     transition: 500ms;
+    padding-top: 100px;
     .subheading {
-        font-size: 38px;
+        font-size: 24px;
         margin-bottom: 10vh;
         @media (max-width: 767px) {
-            font-size: 30px;
+            font-size: 20;
         }
         @media (max-width: 575px) {
-            font-size: 25px;
+            font-size: 18px;
         }
     }
     .cta {
@@ -100,9 +100,30 @@ section.hero {
     }
 }
 
-
 .logo {
     svg {
         max-width: 250px;
     }
+}
+
+.content {
+    .container {
+        max-width: 1000px;
+        & > * {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.button-box a {
+    background-color: #bc992f;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 2px solid #bc992f;
+}
+
+.button-box a:hover {
+    background-color: transparent;
+    color: #bc992f;
+    border: 2px solid #bc992f;
 }
