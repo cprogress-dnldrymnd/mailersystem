@@ -400,6 +400,9 @@ footer {
         display: flex;
         align-items: center;
     }
+    svg {
+        width: auto;
+    }
     > div.col-border {
         padding: 0 !important;
         border-right: 1px solid var(--bs-border-color);
@@ -411,11 +414,16 @@ footer {
     svg {
         max-height: 32px;
         @media (max-width: 575px) {
-            max-height: 25px;
+            max-height: 17px;
+        }
+    }
+    svg {
+        @media (max-width: 575px) {
+            max-height: 17px;
         }
     }
     @media (max-width: 575px) {
-        flex-direction: column;
+        --bs-gutter-x: 30px;
         align-items: center;
     }
 }

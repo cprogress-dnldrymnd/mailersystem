@@ -352,6 +352,8 @@ footer .main-row {
     padding-bottom: 10px;
     display: flex;
     align-items: center; }
+  .footer-logos svg {
+    width: auto; }
   .footer-logos > div.col-border {
     padding: 0 !important;
     border-right: 1px solid var(--bs-border-color); }
@@ -364,10 +366,13 @@ footer .main-row {
     @media (max-width: 575px) {
       .footer-logos img,
       .footer-logos svg {
-        max-height: 25px; } }
+        max-height: 17px; } }
+  @media (max-width: 575px) {
+    .footer-logos svg {
+      max-height: 17px; } }
   @media (max-width: 575px) {
     .footer-logos {
-      flex-direction: column;
+      --bs-gutter-x: 30px;
       align-items: center; } }
 
 .socials ul {
