@@ -319,20 +319,21 @@ section.distributor {
         font-weight: 600;
     }
     .box {
-        font-size: 28px;
-        font-weight: 600;
-        @media (max-width: 1199px) {
-            font-size: 26px;
-        }
-        @media (max-width: 991px) {
+        h3 {
             font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            @media (max-width: 767px) {
+                font-size: 22px;
+            }
+            @media (max-width: 575px) {
+                font-size: 20px;
+                padding: 20px !important;
+            }
         }
-        @media (max-width: 767px) {
-            font-size: 22px;
-        }
-        @media (max-width: 575px) {
+
+        p {
             font-size: 20px;
-            padding: 20px !important;
         }
     }
 }
