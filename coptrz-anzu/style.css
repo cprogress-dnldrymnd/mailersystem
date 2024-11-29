@@ -294,7 +294,7 @@ section.distributor .title {
   font-weight: 600; }
 section.distributor .icon-box svg {
   height: 50px;
-  width: 50px; }
+  width: auto; }
 section.distributor .box h3 {
   font-size: 20px;
   font-weight: 600;
