@@ -126,9 +126,10 @@
                         Coptrz - Master Pan-European Distributor
                     </div>
                     <div class="row gy-4">
-                        <div class="col-xl-3 col-lg-6">
+                        <div class="col-xl-3 col-md-6">
                             <div class="box h-100 border rounded flex-column p-4 d-flex">
-                                <h3 class="mh">Total Data Security: Utilising software developed in the USA with all data hosted on
+                                <h3 class="mh">Total Data Security: Utilising software developed in the USA with all
+                                    data hosted on
                                     US-based servers</h3>
                                 <p>
                                     Ensure sensitive data remains fully secure, in any type of mission by using
@@ -137,9 +138,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6">
+                        <div class="col-xl-3 col-md-6">
                             <div class="box h-100 border rounded flex-column p-4 d-flex">
-                                <h3 class="mh">Trusted & Secure Supply Chain: Transparent supply chain outside of China, removes
+                                <h3 class="mh">Trusted & Secure Supply Chain: Transparent supply chain outside of China,
+                                    removes
                                     risk of future embargoes or punitive tariffs</h3>
                                 <p>
                                     Plan long-term investments free from the worries of supply chain disruption, due to
@@ -148,9 +150,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6">
+                        <div class="col-xl-3 col-md-6">
                             <div class="box h-100 border rounded flex-column p-4 d-flex">
-                                <h3 class="mh">Complies to NATO & US Defence Standards MIL-STD-810: Robust cyber protection and
+                                <h3 class="mh">Complies to NATO & US Defence Standards MIL-STD-810: Robust cyber
+                                    protection and
                                     US-based firmware control
                                 </h3>
                                 <p>
@@ -160,9 +163,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6">
+                        <div class="col-xl-3 col-md-6">
                             <div class="box h-100 border rounded flex-column p-4 d-flex">
-                                <h3 class="mh">World’s Most Reliable Airframe Design: Tried & tested, proven airframe design from
+                                <h3 class="mh">World’s Most Reliable Airframe Design: Tried & tested, proven airframe
+                                    design from
                                     multi-million flight hours
                                 </h3>
                                 <p>
@@ -381,6 +385,11 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
     jQuery(document).ready(function () {
+        mh();
+        countdown();
+    });
+
+    function countdown() {
         date = jQuery('.event-countdown').attr('date');
         var countDownDate = new Date(date).getTime();
 
@@ -410,21 +419,23 @@
                 jQuery('.event-countdown-holder').html('EXPIRED');
             }
         }, 1000);
-    });
+    }
 
-    jQuery(document).ready(function () {
-        // Get all elements with the desired class
-        var elements = jQuery('.mh');
+    function mh() {
+        if (window.innerWidth > 767) {
+            // Get all elements with the desired class
+            var elements = jQuery('.mh');
 
-        // Find the maximum height among the elements
-        var maxHeight = 0;
-        elements.each(function () {
-            maxHeight = Math.max(maxHeight, jQuery(this).height());
-        });
+            // Find the maximum height among the elements
+            var maxHeight = 0;
+            elements.each(function () {
+                maxHeight = Math.max(maxHeight, jQuery(this).height());
+            });
 
-        // Set the height of all elements to the maximum height
-        elements.height(maxHeight);
-    });
+            // Set the height of all elements to the maximum height
+            elements.height(maxHeight);
+        }
+    }
 </script>
 
 </html>
