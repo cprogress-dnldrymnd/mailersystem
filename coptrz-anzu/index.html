@@ -420,10 +420,15 @@
             }
         }, 1000);
     }
+    jQuery(window).resize(function () {
+        console.log('test')
+        mh();
+    });
 
     function mh() {
         if (window.innerWidth > 767) {
             // Get all elements with the desired class
+            jQuery('.mh').removeAttr('style');
             var elements = jQuery('.mh');
 
             // Find the maximum height among the elements
@@ -435,6 +440,7 @@
             // Set the height of all elements to the maximum height
             elements.height(maxHeight);
         }
+
     }
 </script>
 
