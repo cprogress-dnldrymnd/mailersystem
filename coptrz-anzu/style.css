@@ -292,6 +292,8 @@ section.hero .inner {
     max-width: 1720px; } }
 section.distributor .title {
   font-weight: 600; }
+section.distributor .icon-box svg {
+  height: 100px; }
 section.distributor .box h3 {
   font-size: 20px;
   font-weight: 600;
