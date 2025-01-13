@@ -89,6 +89,18 @@ p:last-child {
       padding-top: 60px;
       padding-bottom: 60px; } }
 
+.lg-padding-top {
+  padding-top: 115px; }
+  @media (max-width: 991px) {
+    .lg-padding-top {
+      padding-top: 100px; } }
+  @media (max-width: 767px) {
+    .lg-padding-top {
+      padding-top: 80px; } }
+  @media (max-width: 575px) {
+    .lg-padding-top {
+      padding-top: 60px; } }
+
 .sm-padding {
   padding-top: 64px;
   padding-bottom: 64px; }
@@ -189,32 +201,46 @@ h3 {
     h3 {
       font-size: 25px; } }
 
-.button-box a {
+.button-box a,
+.button-box button {
   --bs-border-radius: 8px;
   font-size: 21px;
-  background-color: var(--accent-color);
   color: var(--bs-white);
   padding: 25px;
   line-height: 1;
   border: 1px solid var(--accent-color);
-  max-width: 270px;
-  width: 100%;
   display: inline-block;
-  transition: 400ms; }
-  .button-box a:hover {
-    background-color: transparent;
-    color: var(--accent-color); }
+  transition: 400ms;
+  text-anchor: 0; }
   @media (max-width: 1199px) {
-    .button-box a {
+    .button-box a,
+    .button-box button {
       padding: 20px;
       font-size: 19px; } }
   @media (max-width: 991px) {
-    .button-box a {
+    .button-box a,
+    .button-box button {
       padding: 16px;
       font-size: 18px; } }
   @media (max-width: 767px) {
-    .button-box a {
+    .button-box a,
+    .button-box button {
       font-size: 17px; } }
+.button-box.button-accent a,
+.button-box.button-accent button {
+  background-color: var(--accent-color); }
+  .button-box.button-accent a:hover,
+  .button-box.button-accent button:hover {
+    background-color: transparent;
+    color: var(--accent-color); }
+.button-box.button-black a,
+.button-box.button-black button {
+  background-color: var(--bs-black);
+  border: 1px solid var(--bs-black); }
+  .button-box.button-black a:hover,
+  .button-box.button-black button:hover {
+    background-color: transparent;
+    color: var(--bs-black); }
 
 @media (min-width: 1500px) {
   .container {
@@ -234,12 +260,18 @@ header a {
   @media (max-width: 480px) {
     .hero-logos img {
       max-width: 100px; } }
+  @media (max-height: 788px) and (min-width: 1200px) {
+    .hero-logos img {
+      max-width: 27vh; } }
 @media (max-width: 575px) {
   .hero-logos svg {
     max-width: 200px; } }
 @media (max-width: 480px) {
   .hero-logos svg {
     max-width: 150px; } }
+@media (max-height: 788px) and (min-width: 1200px) {
+  .hero-logos svg {
+    max-width: 28vh; } }
 
 @media (max-width: 480px) {
   .event-countdown .col-auto {
@@ -270,6 +302,9 @@ header a {
     .event-countdown .countdown-box {
       font-size: 40px;
       width: 100%; } }
+  @media (max-height: 788px) and (min-width: 1200px) {
+    .event-countdown .countdown-box {
+      font-size: 10vh; } }
   .event-countdown .countdown-box + span {
     font-size: 19px;
     font-weight: 600;
@@ -284,10 +319,48 @@ header a {
       .event-countdown .countdown-box + span {
         font-size: 16px; } }
 
-section.hero .heading-box {
-  max-width: 1100px; }
-section.hero .inner {
-  min-height: calc(100vh - 105px - 20px); }
+section.hero {
+  margin-top: 20px; }
+  section.hero .heading-box {
+    max-width: 1100px;
+    margin-bottom: 4vh; }
+    @media (max-height: 788px) and (min-width: 1200px) {
+      section.hero .heading-box {
+        max-width: 1000px;
+        margin-bottom: 0; }
+        section.hero .heading-box h1 {
+          font-size: 11vh;
+          line-height: 11vh; } }
+    @media (max-height: 690px) and (min-width: 1200px) {
+      section.hero .heading-box {
+        max-width: 100%; } }
+  section.hero .description-box {
+    margin-bottom: 5vh; }
+    @media (max-height: 788px) and (min-width: 1200px) {
+      section.hero .description-box {
+        margin-top: 20px;
+        margin-bottom: 3vh;
+        font-size: 3vh; } }
+  section.hero .hero-bottom {
+    gap: 18px;
+    margin-top: 4vh; }
+    section.hero .hero-bottom .arrow {
+      line-height: 1; }
+      section.hero .hero-bottom .arrow svg {
+        -webkit-animation: mover 1s infinite alternate;
+        animation: mover 1s infinite alternate; }
+    @media (max-height: 788px) and (min-width: 1200px) {
+      section.hero .hero-bottom {
+        margin-top: 50px;
+        line-height: 1.3; } }
+  section.hero .inner-content {
+    min-height: calc(100vh - 40px);
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    @media (max-height: 788px) and (min-width: 1200px) {
+      section.hero .inner-content {
+        padding-top: 30px;
+        padding-bottom: 20px; } }
 
 @media (min-width: 1700px) {
   section.distributor .container {
@@ -322,6 +395,9 @@ section.launch .box {
     section.launch .box {
       gap: 20px;
       padding: 20px !important; } }
+section.launch .button-box a,
+section.launch .button-box button {
+  max-width: 270px; }
 
 section.coptrz-text .inner {
   max-width: 1200px;
@@ -380,5 +456,36 @@ footer .main-row {
   @media (max-width: 991px) {
     .socials ul {
       gap: 20px; } }
+
+.button-box-small a {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 16px;
+  border-radius: 15px;
+  width: auto; }
+  .button-box-small a:hover {
+    background-color: var(--bs-white);
+    color: var(--accent-color);
+    border-color: var(--bs-white); }
+
+.button-box-white-hover a:hover {
+  background-color: var(--bs-white);
+  color: var(--accent-color);
+  border-color: var(--bs-white); }
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
+@keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
+section.discover .inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */

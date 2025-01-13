@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-US" class="html">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>
+		Medical Insurance </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/landing-page-style.css">
+</head>
+
+<body>
+	<header class="py-3 bg-light">
+		<div class="container">
+			<div class="row g-1 g-lg-4 justify-content-between align-items-center">
+				<div class="col-auto">
+					<img src="./assets/images/logo.svg" alt="logo">
+				</div>
+				<div class="col-auto">
+					<a class="btn btn-primary" href="#form">
+						Apply Now
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="list-icons my-5">
+		<div class="container-fluid">
+			<h1 class="text-center mb-5">Compare Jewellers’ Block Insurance Providers</h1>
+			<div class="row justify-content-center">
+				<div class="col-lg-auto col-sm-6">
+					<div class="list-icon d-flex align-items-center border p-3 rounded-5 fw-medium">
+						<svg class="text-accent" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="tickgreen 1" clip-path="url(#clip0_1233_646)">
+								<path id="Vector"
+									d="M4.07788 11.8222C4.15566 11.9 4.23344 11.9778 4.31121 12.0555C4.93344 12.6 5.94455 12.5222 6.48899 11.9L6.56677 11.8222L14.1112 3.1111C14.4223 2.79999 14.4223 2.25555 14.1112 1.86666C13.8001 1.47777 13.1779 1.39999 12.789 1.78888L5.24455 8.32221L2.28899 6.14443C1.9001 5.9111 1.43344 5.83332 1.04455 6.14443C0.655658 6.45554 0.57788 7.07777 0.888991 7.54443L4.07788 11.8222Z"
+									fill="currentColor"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1233_646">
+									<rect width="14" height="14" fill="white" transform="translate(0.5)"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+						<span class="ms-3">Secure Your Cover Today</span>
+					</div>
+				</div>
+				<div class="col-lg-auto col-sm-6">
+					<div class="list-icon d-flex align-items-center border p-3 rounded-5 fw-medium">
+						<svg class="text-accent" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="tickgreen 1" clip-path="url(#clip0_1233_646)">
+								<path id="Vector"
+									d="M4.07788 11.8222C4.15566 11.9 4.23344 11.9778 4.31121 12.0555C4.93344 12.6 5.94455 12.5222 6.48899 11.9L6.56677 11.8222L14.1112 3.1111C14.4223 2.79999 14.4223 2.25555 14.1112 1.86666C13.8001 1.47777 13.1779 1.39999 12.789 1.78888L5.24455 8.32221L2.28899 6.14443C1.9001 5.9111 1.43344 5.83332 1.04455 6.14443C0.655658 6.45554 0.57788 7.07777 0.888991 7.54443L4.07788 11.8222Z"
+									fill="currentColor"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1233_646">
+									<rect width="14" height="14" fill="white" transform="translate(0.5)"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+						<span class="ms-3">Compare Top Insurance Policies</span>
+					</div>
+				</div>
+				<div class="col-lg-auto col-sm-6">
+					<div class="list-icon d-flex align-items-center border p-3 rounded-5 fw-medium">
+						<svg class="text-accent" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="tickgreen 1" clip-path="url(#clip0_1233_646)">
+								<path id="Vector"
+									d="M4.07788 11.8222C4.15566 11.9 4.23344 11.9778 4.31121 12.0555C4.93344 12.6 5.94455 12.5222 6.48899 11.9L6.56677 11.8222L14.1112 3.1111C14.4223 2.79999 14.4223 2.25555 14.1112 1.86666C13.8001 1.47777 13.1779 1.39999 12.789 1.78888L5.24455 8.32221L2.28899 6.14443C1.9001 5.9111 1.43344 5.83332 1.04455 6.14443C0.655658 6.45554 0.57788 7.07777 0.888991 7.54443L4.07788 11.8222Z"
+									fill="currentColor"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_1233_646">
+									<rect width="14" height="14" fill="white" transform="translate(0.5)"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+						<span class="ms-3">Completely Free & No Obligation</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="logos my-5">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-auto">
+					<img src="./assets/images/axa.png" alt="">
+				</div>
+				<div class="col-auto">
+					<img src="./assets/images/zurich.png" alt="">
+				</div>
+				<div class="col-auto">
+					<img src="./assets/images/lloyds.png" alt="">
+				</div>
+			
+			</div>
+		</div>
+	</section>
+
+	<section class="form my-extra-large" id="form">
+		<div class="container">
+			<div class="form-box rounded-4 p-3 p-lg-5 bg-light">
+				<h2 class="text-center mb-4">Get Your Free Quote Now</h2>
+				<script type="text/javascript"
+					src="https://illlife.formstack.com/forms/js.php/medical_insurance"></script><noscript><a
+						href="https://illlife.formstack.com/forms/medical_insurance" title="Online Form">Online Form -
+						Medical Insurance</a></noscript>
+
+				<div class="form-footer text-center ">
+					<div class="row justify-content-center">
+						<div class="col-auto">
+							<img src="./assets/images/norton.webp" alt="">
+						</div>
+						<div class="col-auto">
+							<img src="./assets/images/lets-encrypt.webp" alt="">
+
+						</div>
+						<div class="col-12">
+							<p>
+								By submitting this form and based on your requirements you agree that we or one of our
+								FCA
+								authorised partners, can contact you by phone, email or electronic messaging to provide
+								the
+								comparison service and in accordance with our Privacy Policy and Terms & Conditions.
+							</p>
+						</div>
+						<div class="col-12 ">
+							<svg class="me-3" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+								fill="none">
+								<g clip-path="url(#clip0_1346_980)">
+									<path
+										d="M3.0625 5.75V4.4375C3.0625 2.26285 4.82617 0.5 7 0.5C9.17383 0.5 10.9375 2.26285 10.9375 4.4375V5.75H11.375C12.3402 5.75 13.125 6.53477 13.125 7.5V12.75C13.125 13.7152 12.3402 14.5 11.375 14.5H2.625C1.6584 14.5 0.875 13.7152 0.875 12.75V7.5C0.875 6.53477 1.6584 5.75 2.625 5.75H3.0625ZM4.8125 5.75H9.1875V4.4375C9.1875 3.22945 8.20859 2.25 7 2.25C5.79141 2.25 4.8125 3.22945 4.8125 4.4375V5.75Z"
+										fill="#333333"></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_1346_980">
+										<rect width="12.25" height="14" fill="white" transform="translate(0.875 0.5)">
+										</rect>
+									</clipPath>
+								</defs>
+							</svg> Safe | Secure | Privacy Protected
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="our-process text-center my-extra-large">
+		<div class="container">
+			<h2>Our Process</h2>
+			<div class="description-box mb-5">
+				<p>
+					It's our goal to make it as simple as possible to find the private health insurance policy that is
+					right for you.
+				</p>
+				<p>
+					Just follow our three-step process.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="column-holder bg-light rounded-3 p-4">
+						<img class="mb-3" src="./assets/images/process-1.png" alt="process-1">
+						<h3>1. Complete one easy form</h3>
+						<p>
+							Answer a few simple questions to help us understand your needs.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="column-holder bg-light rounded-3 p-4">
+						<img class="mb-3" src="./assets/images/process-2.png" alt="process-2">
+						<h3>2. Compare several plans</h3>
+						<p>
+							A specialist from one of our carefully selected partners will be in touch to help you find a
+							deal to suit your circumstances.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="column-holder bg-light rounded-3 p-4">
+						<img class="mb-3" src="./assets/images/process-3.png" alt="process-3">
+						<h3>
+							3. You decide
+						</h3>
+						<p>
+							Once you have your options, you decide what you want to do. Our service is free,
+							confidential and without obligation.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="quote bg-accent text-white text-center py-extra-large">
+		<div class="container-fluid">
+			<p class="large-text">
+				Over <strong> 1 Million</strong> people have used our website to find the best Medical Insurance plan.
+			</p>
+			<p class="medium-text">
+				We can help you save money too.
+			</p>
+		</div>
+	</section>
+
+	<section class="two-columns my-extra-large">
+		<div class="container">
+			<div class="row g-5 align-items-center">
+				<div class="col-lg-5">
+					<img class="rounded-3" src="./assets/images/waitlist_new (1).png" alt="">
+				</div>
+				<div class="col-lg-7">
+					<div class="column-holder">
+						<h2 class="text-accent">7.7M Await Specialised Treatment in England</h2>
+						<p>
+							In England, as of September 23, 2023, a total of 7,771,057 individuals were in the queue for
+							various specialties, including Cardiology, Orthopaedics, ENT, and more. This figure reflects
+							a significant monthly change of 220%, underlining the growing demand for healthcare services
+							across diverse medical fields.
+						</p>
+						<p>
+							These statistics underscore the challenges faced by the healthcare system in meeting the
+							needs of the population and emphasize the importance of addressing and managing the
+							increasing wait times for specialized treatments.
+						</p>
+						<a class="btn btn-primary" href="#form">
+							Apply Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="two-columns my-extra-large py-large bg-light py-5">
+		<div class="container">
+			<div class="row g-5 align-items-center">
+
+				<div class="col-lg-7">
+					<div class="column-holder">
+						<h2 class="text-accent">Medical Insurance</h2>
+						<p class="medium-text fw-bold">
+							With private Medical Insurance, you can also access a range of private hospitals. You have
+							the freedom to choose or change your own consultant
+						</p>
+						<p>
+							People choose Private Medical Insurance, sometimes called PMI, for a variety of reasons. It
+							could be that you're starting a family and want the best care for your children. Or you just
+							want to know that you'll get quick access to healthcare when you need it. Alternatively, for
+							those in later life, there's the reassurance of speedy diagnosis, advanced treatments, as
+							well as being given priority for knee and hip replacements. What's more, you'll get your own
+							en-suite room during any recovery stay.
+						</p>
+						<p>
+							So, when's the best time to compare your private healthcare options? Right now. Most medical
+							plans exclude pre-existing conditions, which means you should consider the merits of private
+							care when you're healthy. And if you then need treatment for illness or injury, you'll have
+							the peace of mind of knowing that it'll be available without the need to queue. There's no
+							obligation to take out a policy when you get a quote, but it's always wise to know your
+							options.
+						</p>
+						<a class="btn btn-primary" href="#form">
+							Apply Now
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<img class="rounded-3" src="./assets/images/waitlist_new (1).png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="two-columns my-extra-large">
+		<div class="container">
+			<div class="row g-5">
+				<div class="col-lg-5">
+					<img class="rounded-3 h-100 object-fit-cover" src="./assets/images/waitlist_new (1).png" alt="">
+				</div>
+				<div class="col-lg-7">
+					<div class="column-holder">
+						<h2 class="text-accent">Discover the Advantages of
+							Private Medical Insurance (PMI)</h2>
+						<p>
+							Unlock a realm of healthcare possibilities with Private Medical Insurance (PMI). Gain access
+							to an extensive network of private hospitals, where you have the flexibility to choose and
+							even switch your own consultant.
+						</p>
+						<p>
+							Individuals opt for Private Medical Insurance, or PMI, for various reasons. Whether you’re
+							starting a family and seeking top-notch care for your children, desiring prompt access to
+							healthcare, or in later stages of life and prioritising swift diagnosis and advanced
+							treatments, PMI provides the solution. Additionally, for those anticipating knee and hip
+							replacements, PMI offers the assurance of priority care. Enjoy the added benefit of a
+							personalised en-suite room during any recovery period.
+						</p>
+						<p>
+
+							Wondering when is the ideal time to explore your private healthcare options? The answer is
+							now. Given that most medical plans exclude pre-existing conditions, it’s prudent to evaluate
+							the merits of private care when you’re in good health. By doing so, you ensure peace of
+							mind, knowing that if you ever require treatment for an illness or injury, it will be
+							readily available without the hassle of waiting in queues. While there’s no obligation to
+							commit to a policy upon receiving a quote, being informed about your options is always a
+							wise choice.
+						</p>
+						<a class="btn btn-primary" href="#form">
+							Apply Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta py-extra-large bg-primary text-white">
+		<div class="container">
+			<div class="row align-items-end justify-content-between">
+				<div class="col-lg-8">
+					<h2 class="text-white">No matter where you are in the UK, we can help!</h2>
+					<p>
+						We work with highly experienced partners that are able to look at your individual circumstances.
+					</p>
+				</div>
+				<div class="col-auto">
+					<a class="btn btn-white btn-large" href="#form">
+						Get My Free Quote
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="faq py-extra-large">
+		<div class="container">
+			<h2 class="mb-5">
+				Frequently Asked Questions
+			</h2>
+			<div class="faqs">
+				<div class="faq-item mb-4">
+					<h3>
+						Can I get cover for my pre-existing conditions?
+					</h3>
+					<p>
+						Generally speaking, pre-existing conditions are not covered by private health insurance.
+						However, it isn’t impossible. Whether your conditions are covered depends entirely on your
+						individual circumstances and so it is always best to discuss this with an expert. Fill in your
+						details on our form and someone will be in touch to discuss your options.
+					</p>
+				</div>
+				<div class="faq-item mb-4">
+					<h3>
+						Can I get cover for my family too?
+					</h3>
+					<p>
+						Yes, it is possible. Similar to individual health insurance, family health insurance works by
+						having one policy that might cover you, your partner, and your children. This is rather than
+						purchasing multiple plans for each member of your family. Depending on your situation and the
+						insurer, a family health insurance policy may cover different things, but in general, it will
+						cover medically essential inpatient, outpatient, and day-patient procedures. Pre-existing
+						diseases, childbirth, and cosmetic surgery are frequently not covered by private health
+						insurance.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3>
+						Is optical and dental care included?
+					</h3>
+					<p>
+						Depending on the specifics of your policy, private health insurance may or may not cover optical
+						and dental care. Some insurers may offer coverage as part of your plan only up to a specified
+						amount. Others may not offer any coverage at all. You might be able to add optical and dental
+						care as an add-on with some insurers for an additional fee as well.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-primary text-white text-center py-extra-large">
+		<div class="container">
+			<img src="./assets/images/logo.svg" alt="" class="mb-4">
+			<p>
+				Comparemedicalplans.com is a trading style of Shft Marketing Ltd (FRN 924786) who are authorised and
+				regulated by the Financial Conduct Authority.
+			</p>
+			<p>
+
+				Please note: Compare Medical Plans is a specialist health insurance introduction service, created to
+				help our users to find the deal that’s right for them. We work exclusively with Financial Conduct
+				Authority authorised brokers and insurers. We are not a price comparison site or a brokerage, and we do
+				not offer financial advice. We may receive a fee for introducing you, but our service is 100% free and
+				any quotes you receive are provided without obligation.
+			</p>
+			<p>
+
+				All product names, logos, and brands are property of their respective owners. All company, product and
+				service names used in this website are for identification purposes only. Use of these names, logos, and
+				brands does not imply endorsement.
+			</p>
+			<p>
+				£22.29 - 30 year old individual, mid level cover, £200 excess, outside London (ML5 3PX)
+			</p>
+			<p>
+				£43.65 - Over 50’s individual, £200 excess, outside London (ML5 3PX)
+			</p>
+		</div>
+	</footer>
+
+</html>
