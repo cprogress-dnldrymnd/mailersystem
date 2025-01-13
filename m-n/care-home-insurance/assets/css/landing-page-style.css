@@ -23,3 +23,7 @@ footer .logo-box img, footer .logo-box svg {
 header .logo {
     max-width: 250px;
 }
+
+section.quote .inner {
+    max-width: 1300px;
+}

@@ -17,6 +17,9 @@ body {
 .bg-primary {
   background-color: var(--bs-primary) !important; }
 
+.bg-secondary {
+  background-color: var(--bs-secondary) !important; }
+
 p:last-child {
   margin-bottom: 0; }
 
