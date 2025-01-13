@@ -1,0 +1,25 @@
+:root {
+    --bs-primary: #000;
+    --bs-secondary: #FFD95D;
+    --bs-accent: #6BCEB4;
+    --bs-tertiary: #A4C46E;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    color: var(--bs-primary);
+    border-color: var(--bs-secondary);
+}
+.btn-secondary:hover {
+    background-color: var(--bs-accent);
+    border-color: var(--bs-accent);
+    color: var(--bs-primary);
+}
+
+footer .logo-box img, footer .logo-box svg {
+    max-width: 500px;
+}
+
+header .logo {
+    max-width: 250px;
+}

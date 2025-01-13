@@ -31,6 +31,16 @@ p {
         border-color: var(--bs-accent);
     }
 }
+.btn-tertiary {
+    background-color: var(--bs-tertiary);
+    border-color: var(--bs-tertiary);
+    color: var(--bs-white);
+    &:hover {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);
+        color: var(--bs-white);
+    }
+}
 .fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
     padding: 1.5rem 2rem;
     font-size: 1.5rem;
