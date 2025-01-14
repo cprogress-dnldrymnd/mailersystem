@@ -15,3 +15,6 @@ section.quote .inner {
 header .logo {
     max-width: 255px;
 }
+footer .logo-box img, footer .logo-box svg {
+    max-width: : 575px;
+}
