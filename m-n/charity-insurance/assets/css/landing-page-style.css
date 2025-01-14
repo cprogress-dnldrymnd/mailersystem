@@ -1,0 +1,17 @@
+:root {
+    --bs-primary: #000;
+    --bs-accent: #00973D;
+    --bs-secondary: #B6DDA0;
+}
+
+.btn-secondary {
+    color: var(--bs-primary);
+}
+
+section.quote .inner {
+    max-width: 1300px;
+}
+
+header .logo {
+    max-width: 255px;
+}

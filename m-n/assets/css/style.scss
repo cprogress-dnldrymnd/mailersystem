@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-    --bs-light: #f8f9fa;
+    --bs-light: #F8F9FA;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -20,6 +20,13 @@ body {
 .bg-secondary {
     background-color: var(--bs-secondary) !important;
 }
+.bg-light {
+    background-color: var(--bs-light) !important;
+}
+
+.bg-darker-gray {
+    background-color: #EBEBEB !important;
+}
 p {
     &:last-child {
         margin-bottom: 0;
@@ -32,6 +39,16 @@ p {
     &:hover {
         background-color: var(--bs-accent);
         border-color: var(--bs-accent);
+    }
+}
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    color: var(--bs-white);
+    &:hover {
+        background-color: var(--bs-accent);
+        border-color: var(--bs-accent);
+        color: var(--bs-white);
     }
 }
 .btn-tertiary {
@@ -50,6 +67,9 @@ p {
     border-radius: 0.375rem;
     font-weight: 600;
     letter-spacing: 1px;
+}
+.btn {
+    border-width: 2px;
 }
 .btn-large {
     padding: 1rem 2rem;
@@ -71,7 +91,13 @@ p {
 }
 
 .bg-accent {
-    background-color: var(--bs-accent);
+    background-color: var(--bs-accent) !important;
+    .btn-secondary {
+        &:hover {
+            background-color: var(--bs-white);
+            border-color: var(--bs-white);
+        }
+    }
 }
 .large-text {
     font-size: 2rem;
