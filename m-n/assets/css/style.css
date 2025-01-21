@@ -171,7 +171,7 @@ section.logos img {
   .fsForm.fsForm .fsFieldLongAnswer,
   .fsForm.fsForm .MuiOutlinedInput-input,
   .fsForm.fsForm .fsFieldEmail,
-  .fsForm.fsForm .fsFieldNumber,
+  .fsForm.fsForm .fsNumber,
   .fsForm.fsForm .fsFieldPhone {
     background-color: var(--bs-white);
     border: 1px solid #d6d6d6;
