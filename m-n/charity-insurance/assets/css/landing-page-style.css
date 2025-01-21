@@ -4,7 +4,7 @@
     --bs-secondary: #b6dda0;
 }
 
-.btn-secondary {
+.btn-secondary, .fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
     color: var(--bs-primary);
 }
 
