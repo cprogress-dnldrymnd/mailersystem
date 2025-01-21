@@ -218,7 +218,8 @@ section.logos img {
       width: 60px !important;
       height: 60px !important;
       border: none;
-      box-shadow: none; }
+      box-shadow: none;
+      background-color: var(--bs-white); }
     .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button [class*="ImageOptions__StyledIcon"] {
       display: none; }
     .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button label {
@@ -230,8 +231,6 @@ section.logos img {
       border-color: var(--bs-primary) !important; }
       .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button:hover label {
         color: var(--bs-white) !important; }
-      .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button:hover [class*="StyledImageOption"] {
-        filter: brightness(0) invert(1); }
     .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button[aria-checked="true"] {
       background-color: var(--bs-accent) !important;
       border-color: var(--bs-accent) !important; }

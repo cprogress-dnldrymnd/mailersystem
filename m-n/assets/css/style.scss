@@ -261,6 +261,7 @@ section.logos {
                     height: 60px !important;
                     border: none;
                     box-shadow: none;
+                    background-color: var(--bs-white);
                 }
                 [class*="ImageOptions__StyledIcon"] {
                     display: none;
@@ -277,9 +278,7 @@ section.logos {
                     label {
                         color: var(--bs-white) !important;
                     }
-                    [class*="StyledImageOption"] {
-                        filter: brightness(0) invert(1);
-                    }
+                   
                 }
                 &[aria-checked="true"] {
                     background-color: var(--bs-accent) !important;
