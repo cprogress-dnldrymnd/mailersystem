@@ -254,7 +254,8 @@ section.logos img {
     cursor: pointer;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    color: var(--bs-primary); }
     .fsForm.fsForm fieldset[role="radiogroup"] > div:not([class*="ImageOptions__ImageOptionsContainer"]) [class*="StyledOptionLabel"] span:hover {
       background-color: var(--bs-primary);
       border-color: var(--bs-primary) !important;
