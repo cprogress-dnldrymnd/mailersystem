@@ -210,6 +210,9 @@ section.logos {
     .fsFieldSelect {
         min-height: 53px;
     }
+    fieldset[role="radiogroup"] {
+        justify-content: center;
+    }
     .fsFieldCell {
         width: auto !important;
     }

@@ -1,7 +1,7 @@
 :root {
     --bs-primary: #000;
-    --bs-accent: #00973D;
-    --bs-secondary: #B6DDA0;
+    --bs-accent: #00973d;
+    --bs-secondary: #b6dda0;
 }
 
 .btn-secondary {
@@ -15,6 +15,12 @@ section.quote .inner {
 header .logo {
     max-width: 255px;
 }
-footer .logo-box img, footer .logo-box svg {
+footer .logo-box img,
+footer .logo-box svg {
     max-width: 575px;
+}
+
+#label-field179141033,
+#label-field179141061 {
+    text-align: center;
 }

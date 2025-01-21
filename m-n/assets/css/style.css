@@ -181,6 +181,8 @@ section.logos img {
     height: auto; }
   .fsForm.fsForm .fsFieldSelect {
     min-height: 53px; }
+  .fsForm.fsForm fieldset[role="radiogroup"] {
+    justify-content: center; }
   .fsForm.fsForm .fsFieldCell {
     width: auto !important; }
   .fsForm.fsForm .fsValidationError,
