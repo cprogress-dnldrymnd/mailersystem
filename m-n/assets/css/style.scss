@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-    --bs-light: #F8F9FA;
+    --bs-light: #f8f9fa;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -25,7 +25,7 @@ body {
 }
 
 .bg-darker-gray {
-    background-color: #EBEBEB !important;
+    background-color: #ebebeb !important;
 }
 p {
     &:last-child {
@@ -195,8 +195,10 @@ section.logos {
     font-family: "Poppins";
     .fsFieldShortAnswer,
     .fsFieldSelect,
+    .fsFieldLongAnswer,
     .MuiOutlinedInput-input,
     .fsFieldEmail,
+    .fsFieldNumber,
     .fsFieldPhone {
         background-color: var(--bs-white);
         border: 1px solid #d6d6d6;
