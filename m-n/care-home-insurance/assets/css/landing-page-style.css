@@ -33,5 +33,4 @@ section.quote .inner {
 }
 .fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
     background-color: var(--bs-tertiary);
-    color: var(--bs-primary);
 }
