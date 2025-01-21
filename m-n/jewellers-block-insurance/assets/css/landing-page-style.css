@@ -5,3 +5,12 @@
 #label-field179142068, #label-field179142069 {
     text-align: center;
 }
+
+.fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
+    background-color: var(--bs-accent);
+}
+
+
+.fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton:hover {
+    background-color: var(--bs-primary);
+}
