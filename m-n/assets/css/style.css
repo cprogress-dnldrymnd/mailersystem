@@ -219,7 +219,8 @@ section.logos img {
       height: 60px !important;
       border: none;
       box-shadow: none;
-      background-color: var(--bs-white); }
+      background-color: var(--bs-white);
+      border-radius: 5px; }
     .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button [class*="ImageOptions__StyledIcon"] {
       display: none; }
     .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button label {
