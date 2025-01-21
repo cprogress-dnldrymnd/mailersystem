@@ -29,20 +29,18 @@ body {
 p:last-child {
   margin-bottom: 0; }
 
-.btn-primary,
-.fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
+.btn-primary {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary); }
-  .btn-primary:hover,
-  .fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton:hover {
+  .btn-primary:hover {
     background-color: var(--bs-accent);
     border-color: var(--bs-accent); }
 
-.btn-secondary {
+.btn-secondary, .fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
   background-color: var(--bs-secondary);
   border-color: var(--bs-secondary);
   color: var(--bs-white); }
-  .btn-secondary:hover {
+  .btn-secondary:hover, .fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton:hover {
     background-color: var(--bs-accent);
     border-color: var(--bs-accent);
     color: var(--bs-white); }
