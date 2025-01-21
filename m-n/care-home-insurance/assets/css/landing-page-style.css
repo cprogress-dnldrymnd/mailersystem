@@ -31,3 +31,6 @@ section.quote .inner {
 #label-field179141845, #label-field179141846 {
     text-align: center;
 }
+.fsSubmitButton.fsSubmitButton.fsSubmitButton.fsSubmitButton {
+    background-color: var(--bs-tertiary);
+}
