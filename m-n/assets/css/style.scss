@@ -287,9 +287,6 @@ section.logos {
                     label {
                         color: var(--bs-white) !important;
                     }
-                    [class*="StyledImageOption"] {
-                        filter: brightness(0) invert(1);
-                    }
                 }
             }
         }

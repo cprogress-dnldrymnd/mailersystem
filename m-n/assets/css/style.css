@@ -237,8 +237,6 @@ section.logos img {
       border-color: var(--bs-accent) !important; }
       .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button[aria-checked="true"] label {
         color: var(--bs-white) !important; }
-      .fsForm.fsForm fieldset [class*="ImageOptions__ImageOptionsContainer"] button[aria-checked="true"] [class*="StyledImageOption"] {
-        filter: brightness(0) invert(1); }
   .fsForm.fsForm fieldset[role="radiogroup"] > div:not([class*="ImageOptions__ImageOptionsContainer"]) [class*="StyledOptionLabel"] input {
     display: none; }
     .fsForm.fsForm fieldset[role="radiogroup"] > div:not([class*="ImageOptions__ImageOptionsContainer"]) [class*="StyledOptionLabel"] input:checked + span {
