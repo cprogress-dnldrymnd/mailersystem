@@ -136,8 +136,10 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
 .future-text {
   top: 118px;
   color: #7c7c7b;
-  font-size: 30px;
+  font-size: 29px;
   line-height: 1;
+  font-weight: 700;
+
 }
 .title-red-medium {
   top: 157px;
@@ -171,14 +173,15 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   text-align: center;
   color: #fff;
   font-family: "gothambook", Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.25;
   background: #D51317;
   border-radius: 999px;
   cursor: pointer;
+  width: 300px;
 }
 .btn span { display: block; white-space: nowrap; }
-.btn-single { font-size: 26px; padding-top: 20px; padding-bottom: 20px; }
+.btn-single { padding-top: 22px; padding-bottom: 22px; }
 
 /* -----------------------------------------
    Footer: logo left / legal right
@@ -204,6 +207,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   font-size: 12px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
   line-height: 12px;
   white-space: nowrap;
+  font-weight: 700;
 }
 .footer-detail .code {
   font-size: 14px;
