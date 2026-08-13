@@ -150,6 +150,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   color: #7c7c7b;
   font-size: 34px;
   line-height: 1;
+  font-weight: 700;
 }
 .title-red-medium {
   position: absolute;
