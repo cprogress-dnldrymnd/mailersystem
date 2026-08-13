@@ -72,21 +72,20 @@ strong {
    Left Column: Header & Logo
 ----------------------------------------- */
 .header {
-  position: absolute;
-  top: 16px;
-  left: 0;
-  z-index: 5;
-  width: 284px;
-  height: 48px;
-  background: #d51317;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+     position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: 5;
+    width: 284px;
+    height: 48px;
+    background: #d51317;
+    padding: 14px 28px;
+
 }
 .header span {
   color: #fff;
   font-family: "gothambook", Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1;
   white-space: nowrap;
   font-weight: bold;
