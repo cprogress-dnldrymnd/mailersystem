@@ -125,7 +125,7 @@ strong {
 .content {
      position: absolute;
     left: 332px;
-    top: 36px;
+    top: 38px;
     width: 492px;
     text-align: left;
 }
@@ -174,7 +174,7 @@ strong {
   color: #8c8c8c;
   font-size: 33px;
   line-height: 1.2;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
   font-weight: 700
 }
 .title-red-medium {
