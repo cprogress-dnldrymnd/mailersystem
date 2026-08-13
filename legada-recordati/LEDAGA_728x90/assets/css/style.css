@@ -166,21 +166,21 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
 ----------------------------------------- */
 .cta-slot {
   position: absolute;
-  left: 1134px;
+  right: 36px;
   top: 14px;
-  width: 288px;
   height: 66px;
   z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 292px;
 }
 .btn {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px 32px;
+  padding: 5px 32px;
   text-align: center;
   color: #fff;
   font-family: "gothambook", Arial, Helvetica, sans-serif;
@@ -190,8 +190,11 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   border-radius: 999px;
   cursor: pointer;
 }
+.btn.btn-single {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .btn span { display: block; white-space: nowrap; }
-.btn-single { font-size: 23px; }
 
 .footer {
   position: absolute;
@@ -204,7 +207,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   text-align: right;
 }
 .footer-detail p {
-  font-size: 12px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
+  font-size: 11px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
   line-height: 1;
   white-space: nowrap;
   color: #8b8b8a;
