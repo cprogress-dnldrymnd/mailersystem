@@ -1,20 +1,36 @@
 @import url("../fonts/fonts.css");
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   width: 300px;
   height: 50px;
   overflow: hidden;
   background: #f2f2f2;
-  -webkit-text-size-adjust: none; 
+  -webkit-text-size-adjust: none;
 }
 
-body { font-family: "gothambook", Arial, Helvetica, sans-serif; }
+body {
+  font-family: "gothambook", Arial, Helvetica, sans-serif;
+}
 
-img { display: block; max-width: 100%; }
-a { color: inherit; text-decoration: none; }
-strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: normal; }
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+strong {
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
 
 /* The true 300x50 bounding box */
 .banner {
@@ -40,26 +56,34 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
 }
 
 /* Background spans the 1200x200 wrapper */
-.bg { position: absolute; inset: 0; z-index: 0; }
-.bg img { width: 100%; height: 100%; object-fit: cover; }
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* -----------------------------------------
    Left Column: Header & Logo
 ----------------------------------------- */
 .header {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 0;
   z-index: 5;
-  background: #D51317;
-  padding: 11px 20px;
+  background: #d51317;
+  padding: 17px 23px 17px 37px;
   display: inline-flex;
   align-items: center;
 }
 .header span {
   color: #fff;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1;
   white-space: nowrap;
 }
@@ -67,11 +91,14 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
 .logo {
   position: absolute;
   bottom: 22px;
-  left: 24px;
-  width: 280px;
+  left: 36px;
+  width: 248px;
   z-index: 5;
 }
-.logo img { width: 100%; height: auto; }
+.logo img {
+  width: 100%;
+  height: auto;
+}
 
 /* -----------------------------------------
    Center Column: Text Content
@@ -96,28 +123,30 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
 }
 
 .content {
-  position: absolute;
-  left: 332px;
-  top: 0;
-  width: 492px;
-  height: 200px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
+     position: absolute;
+    left: 332px;
+    top: 36px;
+    width: 492px;
+    text-align: left;
 }
 /* Every copy line is set to hold a single line at this width */
-.content p, .content h1, .content h2 { white-space: nowrap; }
-.content h2 { white-space: normal; }
+.content p,
+.content h1,
+.content h2 {
+  white-space: nowrap;
+}
+.content h2 {
+  white-space: normal;
+}
+
 
 /* Frame 1 Typography */
 .title-red {
-  color: #D51317;
+  color: #d51317;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 50px;
-  line-height: 1.05;
+  line-height:1;
   margin-bottom: 5px;
 }
 .presented-by {
@@ -126,67 +155,75 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   line-height: 1.2;
   margin-bottom: 3px;
 }
-.speakers, .date-time {
+.speakers,
+.date-time {
   color: #8c8c8c;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
-  font-size: 21px;
+  font-size: 23px;
   line-height: 1.2;
   margin-bottom: 4px;
 }
-.date-time { margin-bottom: 0; }
-
+.date-time {
+  margin-bottom: 0;
+}
+.frame-1 .content {
+  top: 25px;
+}
 /* Frame 2 Typography */
 .future-text {
   color: #8c8c8c;
   font-size: 33px;
   line-height: 1.2;
   margin-bottom: -2px;
+  font-weight: 700
 }
 .title-red-medium {
-  color: #D51317;
+  color: #d51317;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 35px;
   line-height: 1.26;
 }
 
+
 /* -----------------------------------------
    Right Column: CTA & Legal
 ----------------------------------------- */
 .cta-slot {
-  position: absolute;
-  right: 24px;
-  top: 14px;
-  width: 284px;
-  height: 80px;
-  z-index: 5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    right: 34px;
+    top: 25px;
+    height: 80px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn {
   display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 32px;
-  text-align: center;
-  color: #fff;
-  font-family: "gothambook", Arial, Helvetica, sans-serif;
-  font-size: 21px;
-  line-height: 1.25;
-  background: #D51317;
-  border-radius: 999px;
-  cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 23px 39px;
+    text-align: center;
+    color: #fff;
+    font-family: "gothambook", Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 1.25;
+    background: #d51317;
+    border-radius: 999px;
+    cursor: pointer;
 }
-.btn span { display: block; white-space: nowrap; }
-.btn-single { font-size: 23px; }
+.btn span {
+  display: block;
+  white-space: nowrap;
+}
 
 .footer {
   position: absolute;
-  right: 24px;
+  right: 34px;
   bottom: 10px;
-  width: 340px;
+  width: 353px;
   z-index: 4;
 }
 
@@ -194,11 +231,12 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   text-align: right;
 }
 .footer-detail p {
-  font-size: 13px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
+  font-size: 13.5px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
   line-height: 1.25;
   white-space: nowrap;
   color: #a3a3a3;
   margin-bottom: 2px;
+  font-weight: 700;
 }
 .footer-detail .code {
   margin-bottom: 0;
