@@ -1,0 +1,216 @@
+@import url("../fonts/fonts.css");
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  background: #f2f2f2;
+  -webkit-text-size-adjust: none;
+}
+
+body { font-family: "gothambook", Arial, Helvetica, sans-serif; }
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: normal; }
+
+/* The true 728x90 bounding box */
+.banner {
+  position: relative;
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  background-color: #fdf4f4;
+}
+
+/*
+ * 2x Scaler Container
+ * Internal coordinates map to a 1456x360 grid — every value below is
+ * artwork pixels x2, so the legal copy never hits the browser font floor.
+ */
+.scaler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1456px;
+  height: 180px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
+/* Background spans the 1456x180 wrapper */
+.bg { position: absolute; inset: 0; z-index: 0; }
+.bg img { width: 100%; height: 100%; object-fit: cover; }
+
+/* -----------------------------------------
+   Left Column: Header & Logo
+----------------------------------------- */
+.header {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  z-index: 5;
+  width: 284px;
+  height: 48px;
+  background: #D51317;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.header span {
+  color: #fff;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo {
+  position: absolute;
+  top: 112px;
+  left: 30px;
+  width: 294px;
+  z-index: 5;
+}
+.logo img { width: 100%; height: auto; }
+
+/* -----------------------------------------
+   Center Column: Text Content
+----------------------------------------- */
+.stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.frame.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Copy column starts at artwork x215 and clears the legal block at x535 */
+.content {
+  position: absolute;
+  left: 370px;
+  top: 0;
+  width: 640px;
+  height: 180px;
+  text-align: left;
+}
+.content p, .content h1 { white-space: nowrap; }
+
+/* Frame 1 Typography — tops are set so each cap line lands on the artwork baseline */
+.title-red {
+  position: absolute;
+  top: 16px;
+  color: #D51317;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1;
+}
+.presented-by {
+  position: absolute;
+  top: 65px;
+  color: #7c7c7b;
+  font-size: 19px;
+  line-height: 1;
+}
+.speakers {
+  position: absolute;
+  top: 99px;
+  color: #7c7c7b;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 1;
+}
+.date-time {
+  position: absolute;
+  top: 137px;
+  color: #7c7c7b;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Frame 2 Typography */
+.future-text {
+  position: absolute;
+  top: 24px;
+  color: #7c7c7b;
+  font-size: 34px;
+  line-height: 1;
+}
+.title-red-medium {
+  position: absolute;
+  top: 62px;
+  color: #D51317;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.28;
+}
+
+/* -----------------------------------------
+   Right Column: CTA & Legal
+----------------------------------------- */
+.cta-slot {
+  position: absolute;
+  left: 1134px;
+  top: 14px;
+  width: 288px;
+  height: 66px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  text-align: center;
+  color: #fff;
+  font-family: "gothambook", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.3;
+  background: #D51317;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn span { display: block; white-space: nowrap; }
+.btn-single { font-size: 23px; }
+
+.footer {
+  position: absolute;
+  right: 40px;
+  bottom: 14px;
+  z-index: 4;
+}
+
+.footer-detail {
+  text-align: right;
+}
+.footer-detail p {
+  font-size: 12px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
+  line-height: 1;
+  white-space: nowrap;
+  color: #8b8b8a;
+}
+.footer-detail .code {
+  font-size: 14px;
+  color: #81807f;
+  margin-top: 9px;
+}

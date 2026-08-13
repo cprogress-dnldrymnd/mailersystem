@@ -1,0 +1,205 @@
+@import url("../fonts/fonts.css");
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  background: #f2f2f2;
+  -webkit-text-size-adjust: none; 
+}
+
+body { font-family: "gothambook", Arial, Helvetica, sans-serif; }
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: normal; }
+
+/* The true 300x50 bounding box */
+.banner {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #eae9e9;
+}
+
+/* 
+ * 4x Scaler Container
+ * Internal coordinates map to a 1200x200 grid.
+ */
+.scaler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 200px;
+  transform: scale(0.25);
+  transform-origin: top left;
+}
+
+/* Background spans the 1200x200 wrapper */
+.bg { position: absolute; inset: 0; z-index: 0; }
+.bg img { width: 100%; height: 100%; object-fit: cover; }
+
+/* -----------------------------------------
+   Left Column: Header & Logo
+----------------------------------------- */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 5;
+  background: #D51317;
+  padding: 11px 20px;
+  display: inline-flex;
+  align-items: center;
+}
+.header span {
+  color: #fff;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo {
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+  width: 280px;
+  z-index: 5;
+}
+.logo img { width: 100%; height: auto; }
+
+/* -----------------------------------------
+   Center Column: Text Content
+----------------------------------------- */
+.stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.frame.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.content {
+  position: absolute;
+  left: 332px;
+  top: 0;
+  width: 492px;
+  height: 200px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+/* Every copy line is set to hold a single line at this width */
+.content p, .content h1, .content h2 { white-space: nowrap; }
+.content h2 { white-space: normal; }
+
+/* Frame 1 Typography */
+.title-red {
+  color: #D51317;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 1.05;
+  margin-bottom: 5px;
+}
+.presented-by {
+  color: #8c8c8c;
+  font-size: 21px;
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+.speakers, .date-time {
+  color: #8c8c8c;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.date-time { margin-bottom: 0; }
+
+/* Frame 2 Typography */
+.future-text {
+  color: #8c8c8c;
+  font-size: 33px;
+  line-height: 1.2;
+  margin-bottom: -2px;
+}
+.title-red-medium {
+  color: #D51317;
+  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 1.26;
+}
+
+/* -----------------------------------------
+   Right Column: CTA & Legal
+----------------------------------------- */
+.cta-slot {
+  position: absolute;
+  right: 24px;
+  top: 14px;
+  width: 284px;
+  height: 80px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  text-align: center;
+  color: #fff;
+  font-family: "gothambook", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+  background: #D51317;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn span { display: block; white-space: nowrap; }
+.btn-single { font-size: 23px; }
+
+.footer {
+  position: absolute;
+  right: 24px;
+  bottom: 10px;
+  width: 340px;
+  z-index: 4;
+}
+
+.footer-detail {
+  text-align: right;
+}
+.footer-detail p {
+  font-size: 13px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
+  line-height: 1.25;
+  white-space: nowrap;
+  color: #a3a3a3;
+  margin-bottom: 2px;
+}
+.footer-detail .code {
+  margin-bottom: 0;
+}
