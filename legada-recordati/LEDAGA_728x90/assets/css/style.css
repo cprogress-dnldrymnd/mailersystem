@@ -208,6 +208,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   line-height: 1;
   white-space: nowrap;
   color: #8b8b8a;
+  font-weight: 700;
 }
 .footer-detail .code {
   font-size: 14px;
