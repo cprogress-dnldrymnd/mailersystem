@@ -57,16 +57,15 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   width: 276px;
   height: 52px;
   background: #D51317;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 15px 20px;
 }
 .header span {
   color: #fff;
-  font-family: "gothamblack", Arial, Helvetica, sans-serif;
+  font-family: "gothambook", Arial, Helvetica, sans-serif;
   font-size: 19px;
   line-height: 1;
   white-space: nowrap;
+  font-weight: 700;
 }
 
 /* -----------------------------------------
