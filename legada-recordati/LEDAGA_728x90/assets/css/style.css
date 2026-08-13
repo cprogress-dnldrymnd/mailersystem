@@ -101,7 +101,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
 /* Copy column starts at artwork x215 and clears the legal block at x535 */
 .content {
   position: absolute;
-  left: 370px;
+  left: 428px;
   top: 0;
   width: 640px;
   height: 180px;
@@ -116,7 +116,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   color: #D51317;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 39px;
   line-height: 1;
 }
 .presented-by {
@@ -139,7 +139,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   top: 137px;
   color: #7c7c7b;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1;
 }
 
@@ -148,7 +148,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   position: absolute;
   top: 24px;
   color: #7c7c7b;
-  font-size: 34px;
+  font-size: 33px;
   line-height: 1;
   font-weight: 700;
 }
@@ -158,7 +158,7 @@ strong { font-family: "gothamblack", Arial, Helvetica, sans-serif; font-weight: 
   color: #D51317;
   font-family: "gothamblack", Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 1.28;
 }
 
