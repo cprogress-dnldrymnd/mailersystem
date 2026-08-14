@@ -1,0 +1,32 @@
+
+
+
+/* -----------------------------------------
+   Segoe UI — the family the Figma artwork is set in.
+   Regular currently uses the locally installed Windows font because
+   only Black and SemiBold webfonts have been supplied.
+----------------------------------------- */
+@font-face {
+    font-family: 'segoeregular';
+    src: local('Segoe UI');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoesemibold';
+    src: url('SegoeUI-SemiBold.woff2') format('woff2'),
+         url('SegoeUI-SemiBold.woff') format('woff'),
+         local('Segoe UI Semibold');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'segoeblack';
+    src: url('SegoeUI-Black.woff2') format('woff2'),
+         url('SegoeUI-Black.woff') format('woff'),
+         local('Segoe UI Black');
+    font-weight: normal;
+    font-style: normal;
+}
