@@ -1,0 +1,256 @@
+@import url("../fonts/fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  background: #f2f2f2;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  font-family: "segoeregular", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+strong {
+  font-family: "segoeblack", "Segoe UI Black", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* The true 300x50 bounding box */
+.banner {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #ffffff;
+      border: 1px solid #d51317;
+}
+
+/* 
+ * 4x Scaler Container
+ * Internal coordinates map to a 1200x200 grid.
+ */
+.scaler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 200px;
+  transform: scale(0.25);
+  transform-origin: top left;
+}
+
+/* Background spans the 1200x200 wrapper */
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -----------------------------------------
+   Left Column: Header & Logo
+----------------------------------------- */
+.header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 5;
+  background: #d51317;
+  height: 50px;
+  padding: 0 23px 0 36px;
+  display: inline-flex;
+  align-items: center;
+}
+.header span {
+  color: #fff;
+  font-family: "segoeblack", "Segoe UI Black", Arial, Helvetica, sans-serif;
+  font-size: 18.76px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.logo {
+  position: absolute;
+  top: 138px;
+  left: 32px;
+  width: 256px;
+  z-index: 5;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* -----------------------------------------
+   Center Column: Text Content
+----------------------------------------- */
+.stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.frame {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.frame.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.content {
+  position: absolute;
+  left: 336px;
+  top: 0;
+  width: 492px;
+  text-align: left;
+}
+/* Absolute tops so every copy line lands on its own artwork coordinate */
+.content p,
+.content h1,
+.content h2 {
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+}
+.content h2 {
+  white-space: normal;
+}
+
+
+/* Frame 1 Typography */
+.title-red {
+  top: 15px;
+  color: #d51317;
+  font-family: "segoeblack", "Segoe UI Black", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 1.2;
+}
+.presented-by {
+  top: 80px;
+  color: #7c7c7b;
+  font-size: 23.2px;
+  line-height: 1.4;
+}
+.speakers {
+  top: 112px;
+  color: #7c7c7b;
+  font-family: "segoeblack", "Segoe UI Black", Arial, Helvetica, sans-serif;
+  font-size: 23.2px;
+  line-height: 1.4;
+}
+.date-time {
+  top: 145px;
+  color: #7c7c7b;
+  font-family: "segoeblack", "Segoe UI Black", Arial, Helvetica, sans-serif;
+  font-size: 23.2px;
+  line-height: 1.7;
+}
+/* Frame 2 Typography */
+.future-text {
+  top: 39px;
+  color: #7c7c7b;
+  font-family: "segoesemibold", "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.title-red-medium {
+  top: 82px;
+  color: #d51317;
+  font-family: "segoeblack", "Segoe UI Black", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+
+/* -----------------------------------------
+   Right Column: CTA & Legal
+----------------------------------------- */
+.cta-slot {
+  position: absolute;
+  right: 32px;
+  top: 18px;
+  width: 296px;
+  height: 88px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-2 .cta-slot {
+  top: 30px;
+  height: 72px;
+}
+.btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "segoesemibold", "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+  font-size: 21.05px;
+  line-height: 1.34;
+  background: #d51317;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn span {
+  display: block;
+  white-space: nowrap;
+}
+
+.footer {
+  position: absolute;
+  right: 36px;
+  top: 118px;
+  width: 348px;
+  z-index: 4;
+}
+
+.footer-detail {
+  text-align: right;
+}
+.footer-detail p {
+  font-size: 14.07px; /* Clamp-safe, scales exactly to a readable ultra-micro size */
+  line-height: 1;
+  white-space: nowrap;
+  color: #7c7c7b;
+  font-family: "segoesemibold", "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+}
+.footer-detail .code {
+  font-size: 14.07px;
+  line-height: 1.4;
+  font-family: "segoesemibold", "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
